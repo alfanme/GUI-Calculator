@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUI Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="window">
+        <div class="title">
+            <div class="heading">
+                <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="">
+                <p>Matlab - GUI Calculator - TP Modul 3</p>
+            </div>
+            <div class="icons">
+                <span id="minimize" class="material-icons">minimize</span>
+                <span id="fullscreen" class="material-icons">check_box_outline_blank</span>
+                <span id="exit" class="material-icons">clear</span>
+            </div>
+        </div>
+        <div class="page">
+            <h2>Masukkan angka:</h2>
+            <div class="input_fields">
+                <input placeholder="0" value="" id="first_numb" type="number">
+                <p id="change_op"></p>
+                <input placeholder="0" value="" id="second_numb" type="number">
+                <p>=</p>
+                <input placeholder="0" value="" id="result" type="number">
+            </div>
+            <h2>Pilih operator:</h2>
+            <p id="alert"></p>
+            <div class="operators">
+                <button id="op">+</button>
+                <button id="op">-</button>
+                <button id="op">*</button>
+                <button id="op">/</button>
+            </div>
+            <p id="copyright"></p>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
